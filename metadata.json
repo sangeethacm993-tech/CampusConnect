@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: CampusConnect: Smart Complaint Tracking System",
+  "description": "Every Voice Matters, Every Concern Counts. A comprehensive educational complaint management platform featuring Student, Staff, and Admin portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
