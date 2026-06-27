@@ -146,17 +146,19 @@ npm start
 ## 📸 Screenshots
 
 ### Login Page
-![Login Page](images/login.png)
+![Login Page](screenshots/login.png)
 
 ### Student Dashboard
-![Student Dashboard](images/student-dashboard.png)
+![Student Dashboard](screenshots/student_dashboard1.png)
+
+### Complaint Submission Page
+![Complaint Submission Page](screenshots/student_dashboard2.png)
 
 ### Staff Dashboard
-![Staff Dashboard](images/staff-dashboard.png)
+![Staff Dashboard](screenshots/staff_dashboard.png)
 
 ### Admin Dashboard
-![Admin Dashboard](images/admin-dashboard.png)
-
+![Admin Dashboard](screenshots/admin_dashboard.png)
 
 ## 👩‍💻 Contributors
 
