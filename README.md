@@ -145,16 +145,18 @@ npm start
 
 ## 📸 Screenshots
 
-Add screenshots of:
+### Login Page
+![Login Page](images/login.png)
 
-* Login Page
-* Student Dashboard
-* Complaint Submission Page
-* Complaint Tracking Page
-* Staff Dashboard
-* Admin Dashboard
+### Student Dashboard
+![Student Dashboard](images/student-dashboard.png)
 
----
+### Staff Dashboard
+![Staff Dashboard](images/staff-dashboard.png)
+
+### Admin Dashboard
+![Admin Dashboard](images/admin-dashboard.png)
+
 
 ## 👩‍💻 Contributors
 
