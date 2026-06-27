@@ -1,97 +1,121 @@
 # CampusConnect: Smart Complaint Tracking System
 
 ## 📌 Overview
-CampusConnect: Smart Complaint Tracking System is a full-stack web application designed to streamline complaint management in educational institutions. The platform enables students to submit complaints, staff to resolve issues, and administrators to manage and monitor the entire workflow efficiently using a role-based system.
+
+CampusConnect: Smart Complaint Tracking System is a full-stack web application designed to streamline complaint management in educational institutions. The platform enables students to submit complaints, staff to resolve issues, and administrators to manage and monitor the entire workflow efficiently through a secure role-based access control system.
 
 ---
 
 ## ✨ Features
 
 ### 🔐 Authentication & Authorization
-- Role-Based Access Control (Student, Staff, Admin)
-- JWT-based secure login system
-- Password encryption using bcrypt
-- Protected routes based on user roles
+
+* Role-Based Access Control (Student, Staff, Admin)
+* JWT-based secure authentication
+* Password encryption using bcrypt
+* Protected routes based on user roles
 
 ### 📝 Complaint Management
-- Submit complaints with title, description, category, urgency, and images
-- Track complaint status (pending → in-progress → resolved)
-- Upload evidence images using Multer
+
+* Submit complaints with title, description, category, urgency, and supporting images
+* Track complaint status (Pending → In Progress → Resolved)
+* Upload evidence images using Multer
 
 ### 👥 Staff Module
-- View assigned complaints
-- Update progress with remarks and photos
-- Change complaint status
+
+* View assigned complaints
+* Update complaint progress with remarks and images
+* Change complaint status
 
 ### 👨‍💼 Admin Dashboard
-- View all complaints
-- Assign complaints to staff
-- Monitor system statistics
-- Manage users
+
+* View all complaints
+* Assign complaints to staff
+* Monitor complaint statistics
+* Manage users and complaint categories
 
 ### 💬 Feedback System
-- Rating system for resolved complaints
-- User comments and feedback tracking
+
+* Rating system for resolved complaints
+* User comments and feedback tracking
 
 ### 📧 Notifications
-- Email alerts using Nodemailer
-- Notifications for complaint updates and resolution
+
+* Email notifications using Nodemailer
+* Complaint status update alerts
 
 ---
 
 ## 🛠 Tech Stack
 
 ### Frontend
-- React
-- React Router DOM
-- Axios
-- Bootstrap
-- JWT Decode
+
+* React
+* React Router DOM
+* Axios
+* Bootstrap
+* JWT Decode
 
 ### Backend
-- Node.js
-- Express.js
-- MongoDB + Mongoose
-- JWT Authentication
-- bcryptjs
 
-### Tools
-- Multer (file uploads)
-- Nodemailer (emails)
-- Socket.io (real-time updates)
-- dotenv
-- CORS
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* bcryptjs
+
+### Tools & Libraries
+
+* Multer (File Uploads)
+* Nodemailer (Email Service)
+* Socket.io (Real-time Updates)
+* dotenv
+* CORS
 
 ---
 
-## 🏗 Architecture
+## 🏗 System Architecture
 
-Frontend (React) → Backend (Express API) → MongoDB Database  
-Authentication handled using JWT tokens  
-File uploads handled using Multer  
-Emails sent using Nodemailer  
+Frontend (React) → Express.js REST API → MongoDB Database
+
+* JWT for Authentication
+* Multer for File Uploads
+* Nodemailer for Email Notifications
+* Socket.io for Real-time Communication
 
 ---
 
 ## 🚀 Installation
 
-### 1. Clone Repository
+### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/your-username/campusconnect.git
-cd campusconnect
+git clone https://github.com/sangeethacm993-tech/CampusConnect.git
+cd CampusConnect
+```
 
-2. Install Dependencies
-Backend:
--cd server
--npm install
+### 2. Install Dependencies
 
-Frontend:
--cd client
--npm install
+#### Backend
 
-3. Setup Environment Variables
-Create .env file inside server folder:
+```bash
+cd server
+npm install
+```
 
+#### Frontend
+
+```bash
+cd client
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file inside the **server** folder.
+
+```env
 MONGO_URI=your_mongodb_connection
 JWT_SECRET=your_secret_key
 PORT=5000
@@ -99,29 +123,59 @@ EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_password
 ADMIN_EMAIL=admin@campus.edu
 ADMIN_PASSWORD=admin123
+```
 
-4. Run Project
-Backend:
--cd server
--npm start
+### 4. Run the Project
 
-Frontend:
--cd client
--npm start
+#### Backend
 
-👩‍💻 Contributors
-CampusConnect: Smart Complaint Tracking System was developed as a collaborative academic project.
-Sangeetha C M 
-Shakshi Kumari
-Saanvee Pothuri
+```bash
+cd server
+npm start
+```
 
-🔮 Future Improvements
-Mobile app version
-AI-based complaint categorization
-Advanced analytics dashboard
-Push notifications
-Live chat support
+#### Frontend
 
-📄 License
-This project is for academic and learning purposes.
+```bash
+cd client
+npm start
+```
 
+---
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+* Login Page
+* Student Dashboard
+* Complaint Submission Page
+* Complaint Tracking Page
+* Staff Dashboard
+* Admin Dashboard
+
+---
+
+## 👩‍💻 Contributors
+
+CampusConnect: Smart Complaint Tracking System was developed as a collaborative academic project by:
+
+* **Sangeetha C M**
+* **Shakshi Kumari**
+* **Saanvee Pothuri**
+
+---
+
+## 🔮 Future Improvements
+
+* Mobile application
+* AI-based complaint categorization
+* Advanced analytics dashboard
+* Push notifications
+* Live chat support
+
+---
+
+## 📄 License
+
+This project is developed for academic and learning purposes.
