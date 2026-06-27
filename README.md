@@ -1,20 +1,114 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# CampusConnect: Smart Complaint Tracking System
 
-# Run and deploy your AI Studio app
+## 📌 Overview
+CampusConnect: Smart Complaint Tracking System is a full-stack web application designed to streamline complaint management in educational institutions. The platform enables students to submit complaints, staff to resolve issues, and administrators to manage and monitor the entire workflow efficiently using a role-based system.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/acbed7e3-d8f4-4f37-9b7d-3d02a98d5798
+## ✨ Features
 
-## Run Locally
+### 🔐 Authentication & Authorization
+- Role-Based Access Control (Student, Staff, Admin)
+- JWT-based secure login system
+- Password encryption using bcrypt
+- Protected routes based on user roles
 
-**Prerequisites:**  Node.js
+### 📝 Complaint Management
+- Submit complaints with title, description, category, urgency, and images
+- Track complaint status (pending → in-progress → resolved)
+- Upload evidence images using Multer
 
+### 👥 Staff Module
+- View assigned complaints
+- Update progress with remarks and photos
+- Change complaint status
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 👨‍💼 Admin Dashboard
+- View all complaints
+- Assign complaints to staff
+- Monitor system statistics
+- Manage users
+
+### 💬 Feedback System
+- Rating system for resolved complaints
+- User comments and feedback tracking
+
+### 📧 Notifications
+- Email alerts using Nodemailer
+- Notifications for complaint updates and resolution
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React
+- React Router DOM
+- Axios
+- Bootstrap
+- JWT Decode
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- JWT Authentication
+- bcryptjs
+
+### Tools
+- Multer (file uploads)
+- Nodemailer (emails)
+- Socket.io (real-time updates)
+- dotenv
+- CORS
+
+---
+
+## 🏗 Architecture
+
+Frontend (React) → Backend (Express API) → MongoDB Database  
+Authentication handled using JWT tokens  
+File uploads handled using Multer  
+Emails sent using Nodemailer  
+
+---
+
+## 🚀 Installation
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/your-username/campusconnect.git
+cd campusconnect
+2. Install Dependencies
+
+Backend:
+
+cd server
+npm install
+
+Frontend:
+
+cd client
+npm install
+3. Setup Environment Variables
+
+Create .env file inside server folder:
+
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+PORT=5000
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_app_password
+ADMIN_EMAIL=admin@campus.edu
+ADMIN_PASSWORD=admin123
+4. Run Project
+
+Backend:
+
+cd server
+npm start
+
+Frontend:
+
+cd client
+npm start
