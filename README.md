@@ -79,19 +79,17 @@ Emails sent using Nodemailer
 ```bash
 git clone https://github.com/your-username/campusconnect.git
 cd campusconnect
+
 2. Install Dependencies
-
 Backend:
-
-cd server
-npm install
+-cd server
+-npm install
 
 Frontend:
+-cd client
+-npm install
 
-cd client
-npm install
 3. Setup Environment Variables
-
 Create .env file inside server folder:
 
 MONGO_URI=your_mongodb_connection
@@ -101,14 +99,29 @@ EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_password
 ADMIN_EMAIL=admin@campus.edu
 ADMIN_PASSWORD=admin123
+
 4. Run Project
-
 Backend:
-
-cd server
-npm start
+-cd server
+-npm start
 
 Frontend:
+-cd client
+-npm start
 
-cd client
-npm start
+👩‍💻 Contributors
+CampusConnect: Smart Complaint Tracking System was developed as a collaborative academic project.
+Sangeetha C M 
+Shakshi Kumari
+Saanvee Pothuri
+
+🔮 Future Improvements
+Mobile app version
+AI-based complaint categorization
+Advanced analytics dashboard
+Push notifications
+Live chat support
+
+📄 License
+This project is for academic and learning purposes.
+
